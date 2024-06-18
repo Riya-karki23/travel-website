@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .intro-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        .intro-text {
+            max-width: 600px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .image-slider {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* CSS Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* CSS Animation for Image Slider */
+        .image-slider .slide {
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-container">
+        <div class="intro-text">
+            <h1>Welcome to Your Next Adventure</h1>
+            <p>Find unique places to stay and things to do, all around the world.</p>
+        </div>
+
+        <div class="image-slider">
+            <img class="slide" src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1708819200&semt=ais" alt="Image 1">
+            <img class="slide" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-H9932EZgE04ADPJ5craWw6CDpl5HRczgGJ2VzVcMoudQReKrLYQsXNfcHIiMuOhgS4&usqp=CAU" alt="Image 2">
+            <img class="slide" src="https://i.pinimg.com/originals/8b/0f/03/8b0f0372d4269666e307df86bbf31c4e.jpg" alt="Image 3">
+        </div>
+    </div>
+
+   </body>
+   </html>
